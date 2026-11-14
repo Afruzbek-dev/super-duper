@@ -16,14 +16,12 @@
   .hero-img{max-width:340px}
   .cta-row{flex-direction:row;flex-wrap:wrap}.cta-row .btn{width:auto}
 }
-/* themes */
-.hero.blue{background:linear-gradient(160deg,#0b3d91,#0071e3 60%,#4aa3ff);color:#fff}
-.hero.dark{background:#0b1b33;color:#fff}
-.hero.blue .eyebrow,.hero.dark .eyebrow{color:#9cc7ff}
-.hero.blue .lead,.hero.dark .lead{color:rgba(255,255,255,.85)}
-.hero.blue .btn.primary,.hero.dark .btn.primary{background:#fff;color:#0057b8}
-.hero.blue .btn.ghost,.hero.dark .btn.ghost{color:#fff}
-.hero.light{background:var(--bg2)}
-.hero.tint{background:#eaf3ff}
-.hero.light .btn.ghost,.hero.tint .btn.ghost{color:var(--blue)}
-.hero.dark .hero-img{background:linear-gradient(135deg,#0b3d91,#4aa3ff);border-radius:28px;padding:12px}
+/* themes: blue (Hesap brand) or white */
+.hero.blue{background:linear-gradient(160deg,#0a66d6,#0071e3 55%,#2b8cf5);color:#fff}
+.hero.blue .eyebrow{color:#cfe5ff}
+.hero.blue .lead{color:rgba(255,255,255,.9)}
+.hero.blue .btn.primary{background:#fff;color:#0057b8}
+.hero.white{background:#fff}
+.hero.white .eyebrow{color:var(--blue)}
+.hero.white .lead{color:var(--muted)}
+.hero.white .hero-img{filter:drop-shadow(0 18px 30px rgba(0,113,227,.25))}
