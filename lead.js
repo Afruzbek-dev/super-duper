@@ -4,5 +4,7 @@ window.sendLead = async (data) => {
   ['utm_source','utm_medium','utm_campaign','utm_content','utm_term','fbclid','ttclid'].forEach((k) => { if (p.get(k)) utm[k] = p.get(k); });
   const r = await fetch('/api/lead', { method: 'POST', headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ ...data, utm, referrer: document.referrer, variant: location.pathname }) }).catch(() => null);
-  return !!(r && r.ok);
+  const ok = !!(r && r.ok);
+  if (ok) { try { window.fbq && fbq('track', 'Lead'); } catch (e) {} }
+  return ok;
 };
