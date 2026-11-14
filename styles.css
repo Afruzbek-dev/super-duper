@@ -82,3 +82,7 @@ details p{color:var(--muted);margin:10px 0 0}
 .thanks{text-align:center;padding:20px 0}
 body.lock{overflow:hidden}
 html{scroll-padding-top:60px}
+.field-l{display:block;font-size:14px;font-weight:600;margin:14px 0 2px}
+.err:empty{display:none}
+.card .q-title{padding-right:44px}
+.sf .field{margin:4px 0}
