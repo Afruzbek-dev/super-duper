@@ -1,0 +1,23 @@
+.v6 h2{text-align:left}
+.sec{padding-top:56px;padding-bottom:8px}
+.about{color:var(--muted);margin:0 0 16px;max-width:640px}
+.fine{color:var(--muted);font-size:14px;margin:14px 0 0}
+.pain{list-style:none;padding:0;margin:0;display:grid;gap:10px}
+.pain li{display:flex;gap:14px;align-items:flex-start;background:var(--bg2);border-radius:16px;padding:16px}
+.pain b{flex:none;width:28px;height:28px;border-radius:50%;background:#ffe3e6;color:#d70015;display:grid;place-items:center;font-size:14px}
+.v6 .steps ol{max-width:none;gap:16px}
+.v6 .steps li{align-items:flex-start}
+.v6 .steps h3{margin:0 0 2px;font-size:19px}.v6 .steps p{margin:0;color:var(--muted)}
+.grid article i{font-style:normal;font-size:26px;display:block;margin-bottom:8px}
+.calc-card{max-width:520px;background:#fff;border:1px solid var(--line);border-radius:24px;padding:22px}
+.calc-card input[type=range]{width:100%;accent-color:var(--blue);margin:8px 0 16px}
+.res{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.res div{background:var(--bg2);border-radius:16px;padding:14px}
+.res small{display:block;color:var(--muted)}.res b{font-size:20px;letter-spacing:-.01em}
+.form-sec{padding:56px 20px 24px;scroll-margin-top:60px}
+.form-card{max-width:520px;margin:0 auto;background:#fff;border:1px solid var(--line);border-radius:28px;padding:26px 22px;box-shadow:0 20px 60px rgba(0,113,227,.12)}
+.form-card h2{font-size:clamp(24px,5vw,30px);margin:0 0 6px}
+.v6 select.field{appearance:auto}
+.thanks{text-align:center;padding:24px 0}
+.v6foot{padding-top:32px}
+html{scroll-padding-top:60px}
