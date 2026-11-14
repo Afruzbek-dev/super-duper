@@ -40,3 +40,10 @@ html{scroll-padding-top:16px}
 .v6 .hero{gap:14px}
 .v6 .hero-img{max-width:min(210px,32svh)}
 .v6 .lead2{margin-top:-6px}
+@media(min-width:721px){
+  .v6 .hero{grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:48px;align-items:center;padding-top:40px;padding-bottom:40px}
+  .v6 .hero-img{max-width:440px;width:100%;justify-self:center}
+  .v6 .hero .in{max-width:520px}
+  .v6 .hero h1{font-size:clamp(34px,3.4vw,46px)}
+  .v6 .hero .lead{font-size:clamp(17px,1.5vw,20px)}
+}
