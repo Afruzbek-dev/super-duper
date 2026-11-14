@@ -55,9 +55,9 @@
     }
   }
 
-  function open() { modal.classList.add('open'); document.body.classList.add('lock'); if (!started) { started = true; show(); } }
+  function open(intent) { if (intent) data.intent = intent; modal.classList.add('open'); document.body.classList.add('lock'); if (!started) { started = true; show(); } }
   function close() { modal.classList.remove('open'); document.body.classList.remove('lock'); if (location.hash === '#quiz') history.replaceState(null, '', location.pathname + location.search); started = false; i = 0; }
-  document.querySelectorAll('[data-open]').forEach((a) => a.addEventListener('click', (e) => { e.preventDefault(); open(); }));
+  document.querySelectorAll('[data-open]').forEach((a) => a.addEventListener('click', (e) => { e.preventDefault(); open(a.dataset.intent); }));
   $('#close').addEventListener('click', close);
   modal.addEventListener('click', (e) => { if (e.target === modal) close(); });
   document.addEventListener('keydown', (e) => { if (e.key === 'Escape') close(); });
