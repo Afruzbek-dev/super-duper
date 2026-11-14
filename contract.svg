@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 460" role="img" aria-label="Nasiya shartnomasi">
+<defs><linearGradient id="h" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#2b8cf5"/><stop offset="1" stop-color="#0071e3"/></linearGradient>
+<filter id="s" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="14" stdDeviation="14" flood-color="#0071e3" flood-opacity=".22"/></filter></defs>
+<rect x="60" y="30" width="250" height="360" rx="14" fill="#dbe9fb" transform="rotate(5 185 210)"/>
+<g filter="url(#s)"><rect x="46" y="14" width="260" height="396" rx="16" fill="#fff" stroke="#dbe6f5"/></g>
+<rect x="46" y="14" width="260" height="52" rx="16" fill="url(#h)"/><rect x="46" y="44" width="260" height="22" fill="url(#h)"/>
+<text x="62" y="36" font-family="Arial,sans-serif" font-size="10" fill="#cfe5ff" letter-spacing="1">HESAP</text>
+<text x="62" y="55" font-family="Arial,sans-serif" font-size="15" font-weight="700" fill="#fff">Nasiya shartnomasi №124</text>
+<g font-family="Arial,sans-serif" fill="#1d1d1f">
+<text x="62" y="90" font-size="10" fill="#6e6e73">Sotuvchi</text><text x="62" y="105" font-size="12" font-weight="700">Do'kon "Mobi Plus"</text>
+<text x="190" y="90" font-size="10" fill="#6e6e73">Xaridor</text><text x="190" y="105" font-size="12" font-weight="700">A. Karimov</text>
+<line x1="62" y1="118" x2="290" y2="118" stroke="#dbe6f5"/>
+<text x="62" y="138" font-size="10" fill="#6e6e73">Mahsulot</text><text x="62" y="154" font-size="12" font-weight="700">Smartfon · 12 oy</text>
+<text x="190" y="138" font-size="10" fill="#6e6e73">Umumiy summa</text><text x="190" y="154" font-size="12" font-weight="700">4 200 000 so'm</text>
+<rect x="62" y="168" width="228" height="64" rx="10" fill="#eef5ff"/>
+<text x="74" y="186" font-size="10" fill="#6e6e73">To'lov grafigi</text>
+<text x="74" y="203" font-size="11">Har oy 15-sanada</text><text x="222" y="203" font-size="11" font-weight="700">350 000</text>
+<text x="74" y="221" font-size="11">Oxirgi to'lov</text><text x="222" y="221" font-size="11" font-weight="700">15 dek</text></g>
+<g stroke="#c9d6e8" stroke-width="5" stroke-linecap="round"><line x1="62" y1="250" x2="290" y2="250"/><line x1="62" y1="266" x2="270" y2="266"/><line x1="62" y1="282" x2="282" y2="282"/></g>
+<g font-family="Arial,sans-serif" font-size="9" fill="#6e6e73"><text x="62" y="322">Sotuvchi imzosi</text><text x="190" y="322">Xaridor imzosi</text></g>
+<path d="M62 312c10-16 14 6 22-4s10-6 18-2" stroke="#0057b8" stroke-width="2" fill="none" stroke-linecap="round"/>
+<path d="M190 312c8-14 14 4 20-4s12 0 22-2" stroke="#0057b8" stroke-width="2" fill="none" stroke-linecap="round"/>
+<line x1="62" y1="326" x2="168" y2="326" stroke="#dbe6f5"/><line x1="190" y1="326" x2="290" y2="326" stroke="#dbe6f5"/>
+<g transform="translate(62 342)"><rect width="150" height="46" rx="12" fill="#e3f6e8"/><circle cx="23" cy="23" r="11" fill="#248a3d"/><path d="M17 23l5 5 8-9" stroke="#fff" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="42" y="20" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="#248a3d">MyID bilan</text><text x="42" y="34" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="#248a3d">imzolangan</text></g>
+<g transform="translate(236 342)" fill="#10213d"><rect width="54" height="46" rx="6" fill="#fff" stroke="#dbe6f5"/><rect x="7" y="6" width="14" height="14"/><rect x="25" y="6" width="6" height="6"/><rect x="35" y="6" width="12" height="12"/><rect x="7" y="25" width="6" height="6"/><rect x="17" y="24" width="14" height="14"/><rect x="35" y="26" width="12" height="12"/></g>
+<g transform="translate(250 372) rotate(-8)"><circle r="30" cx="40" cy="14" fill="none" stroke="#0071e3" stroke-width="3" opacity="0"/></g>
+</svg>

@@ -21,3 +21,10 @@
 .thanks{text-align:center;padding:24px 0}
 .v6foot{padding-top:32px}
 html{scroll-padding-top:60px}
+.v6 .hero{min-height:100svh;padding-top:24px}
+.brandline{display:flex;align-items:center;gap:8px;font-weight:700;font-size:18px;margin:0 0 14px}
+.brandline img{border-radius:8px}
+.v6 .hero-img{max-width:300px}
+.v6 .hero.white .hero-img{filter:none}
+html{scroll-padding-top:16px}
+.form-sec{scroll-margin-top:16px}
