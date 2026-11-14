@@ -30,3 +30,7 @@ html{scroll-padding-top:16px}
 .form-sec{scroll-margin-top:16px}
 .endcta{padding-bottom:56px}.endcta .btn{margin-top:4px}
 .modal .card .q-title{padding-right:44px;text-align:left}
+.hero.noimg{justify-content:center}
+.hero.noimg .in{max-width:640px}
+.hero.noimg h1{font-size:clamp(34px,8vw,60px)}
+@media(min-width:721px){.hero.noimg{grid-template-columns:1fr;justify-items:start}}
