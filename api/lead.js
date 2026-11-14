@@ -9,7 +9,7 @@ module.exports = async (req, res) => {
 
   const { TG_BOT_TOKEN, TG_CHAT_ID } = process.env;
   if (TG_BOT_TOKEN && TG_CHAT_ID) {
-    const text = `🆕 Yangi ariza\nIsm: ${lead.name}\nTelefon: ${lead.phone}\nTelegram: ${lead.telegram}\nBiznes: ${lead.business}\nManzil: ${lead.location}`;
+    const text = `🆕 Yangi ariza\nIsm: ${lead.name}\nTelefon: ${lead.phone}\nTelegram: ${lead.telegram}\nBiznes: ${lead.business}\nManzil: ${lead.location}\nVariant: ${clean(b.variant, 20)}`;
     const r = await fetch(`https://api.telegram.org/bot${TG_BOT_TOKEN}/sendMessage`, {
       method: 'POST', headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ chat_id: TG_CHAT_ID, text })

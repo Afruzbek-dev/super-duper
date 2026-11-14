@@ -45,9 +45,8 @@
   async function submit() {
     bar.style.width = '95%';
     stepEl.innerHTML = '<div class="thanks fade"><p class="q-sub">Yuborilmoqda...</p></div>';
-    const r = await fetch('/api/lead', { method: 'POST', headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ ...data, utm, referrer: document.referrer }) }).catch(() => null);
-    if (r && r.ok) {
+    const ok = await window.sendLead(data);
+    if (ok) {
       bar.style.width = '100%';
       stepEl.innerHTML = '<div class="thanks fade"><h2 style="text-align:center">Rahmat!</h2><p class="q-sub">Arizangiz qabul qilindi. Tez orada siz bilan bog\'lanamiz.</p><button class="btn primary" id="done" type="button">Yopish</button></div>';
       $('#done').onclick = close; i = 0; Object.keys(data).forEach((k) => delete data[k]);
