@@ -20,7 +20,7 @@
       <p class="brandline"><img src="/logo.jpg" width="28" height="28" alt="">Hesap</p>
       <h1>Nasiyaga bergan pulingiz o'z vaqtida qaytsin</h1>
       <p class="lead">Hesap'da nasiyani yuridik kuchga ega elektron shartnoma bilan bering. Rasmiylashtirish 5 daqiqa oladi.</p>
-      <div class="cta-row"><a class="btn primary big" href="#form">Bepul ulanish</a></div>
+      <div class="cta-row"><a class="btn primary big" href="#form" data-open>Bepul ulanish</a></div>
     </div>
   </section>
 
@@ -44,11 +44,18 @@
     </ol>
   </section>
 
-  <section class="form-sec" id="form">
-    <div class="form-card">
-      <div id="fbox">
-        <h2>Do'koningizni bepul ulab beramiz</h2>
-        <p class="about">Sotuvchilaringizni o'zimiz o'rgatamiz. Ariza qoldiring, 15 daqiqada qo'ng'iroq qilamiz.</p>
+  <section class="wrap sec endcta">
+    <h2>Do'koningizni bepul ulab beramiz</h2>
+    <p class="about">Sotuvchilaringizni o'zimiz o'rgatamiz. Ariza qoldiring, 15 daqiqada qo'ng'iroq qilamiz.</p>
+    <a class="btn primary big" href="#form" data-open>Bepul ulanish</a>
+  </section>
+</main>
+<div class="modal" id="quiz" role="dialog" aria-modal="true" aria-label="Ariza">
+  <div class="card">
+    <button class="close" id="close" type="button" aria-label="Yopish">&times;</button>
+    <div id="fbox">
+        <h2 class="q-title">Bepul ulanish</h2>
+        <p class="q-sub">Ariza qoldiring, 15 daqiqada qo'ng'iroq qilamiz.</p>
         <form id="lf" novalidate>
           <label class="field-l" for="f-name">Ism</label>
           <input class="field" id="f-name" name="name" placeholder="Ismingiz" autocomplete="name" maxlength="100">
@@ -68,9 +75,8 @@
           <p class="note">15 daqiqada qo'ng'iroq qilamiz. Ma'lumotlaringiz faqat siz bilan bog'lanish uchun ishlatiladi.</p>
         </form>
       </div>
-    </div>
-  </section>
-</main>
+  </div>
+</div>
 <footer class="wrap foot v6foot">
   <span>HESAP MChJ, Toshkent</span>
   <span><a href="https://t.me/hesap_uzb" rel="noopener">Telegram: @hesap_uzb</a> · <a href="https://instagram.com/hesap.uz" rel="noopener">Instagram: @hesap.uz</a></span>
