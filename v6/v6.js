@@ -1,17 +1,6 @@
 (() => {
   'use strict';
   const $ = (s) => document.querySelector(s);
-  // calculator
-  const n = $('#c-n'), a = $('#c-a'), p = $('#c-p');
-  const num = (s) => parseInt(String(s).replace(/\D/g, ''), 10) || 0;
-  const fmt = (v) => v >= 1e6 ? (v / 1e6).toLocaleString('uz-UZ', { maximumFractionDigits: 1 }).replace('.', ',') + ' mln so\'m' : Math.round(v).toLocaleString('ru-RU') + " so'm";
-  function calc() {
-    $('#c-pv').textContent = p.value + '%';
-    const m = num(n.value) * num(a.value) * (p.value / 100);
-    $('#r-m').textContent = fmt(m); $('#r-y').textContent = fmt(m * 12);
-  }
-  a.addEventListener('input', () => { const d = num(a.value); a.value = d ? d.toLocaleString('ru-RU') : ''; calc(); });
-  [n, p].forEach((e) => e.addEventListener('input', calc)); calc();
   // form
   const f = $('#lf');
   const R = { name: [(v) => v.length >= 2, 'Ismingizni kiriting'], phone: [(v) => v.replace(/\D/g, '').length >= 9, "Telefon raqamni to'g'ri kiriting"], location: [(v) => v.length >= 2, "Do'kon joylashuvini yozing"] };
