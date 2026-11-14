@@ -14,7 +14,7 @@
 <header class="nav">
   <div class="wrap nav-in">
     <a class="brand" href="/" aria-label="Hesap"><img class="logo" src="/logo.jpg" width="30" height="30" alt="">Hesap</a>
-    <a class="nav-cta" href="#form">Ariza qoldirish</a>
+    <a class="nav-cta" href="#quiz" data-open>Ariza qoldirish</a>
   </div>
 </header>
 
@@ -23,7 +23,7 @@
     <p class="eyebrow">Elektron shartnoma</p>
     <h1>Rassrochkaga mahsulot berasizmi?</h1>
     <p class="lead">Shartnomani 2 daqiqada rasmiy imzolang. To'lov jadvali va eslatmalar tayyor.</p>
-    <a class="btn primary big" href="#form">Ariza qoldirish</a>
+    <a class="btn primary big" href="#quiz" data-open>Ariza qoldirish</a>
   </section>
 
   <section class="wrap feats">
@@ -45,30 +45,6 @@
     </ol>
   </section>
 
-  <section class="form-sec" id="form">
-    <div class="form-card">
-      <div id="formbox">
-        <h2>Ariza qoldiring</h2>
-        <p class="sub">Ma'lumotlaringizni yozing, biz siz bilan bog'lanamiz.</p>
-        <form id="cf" novalidate>
-          <label class="field-l" for="f-name">Ism</label>
-          <input class="field" id="f-name" name="name" placeholder="Ismingiz" autocomplete="name" maxlength="100" required>
-          <label class="field-l" for="f-phone">Telefon raqam</label>
-          <input class="field" id="f-phone" name="phone" type="tel" inputmode="tel" placeholder="+998 90 123 45 67" autocomplete="tel" required>
-          <label class="field-l" for="f-tg">Telegram</label>
-          <input class="field" id="f-tg" name="telegram" placeholder="@username" maxlength="60" required>
-          <label class="field-l" for="f-biz">Biznesingiz</label>
-          <input class="field" id="f-biz" name="business" placeholder="Masalan: telefon do'koni, avtosalon" maxlength="120" required>
-          <label class="field-l" for="f-loc">Qayerda joylashgan</label>
-          <input class="field" id="f-loc" name="location" placeholder="Shahar / tuman" maxlength="120" required>
-          <button class="btn primary block" type="submit" style="margin-top:14px">Yuborish</button>
-          <p id="cmsg" class="note" aria-live="polite"></p>
-          <p class="note">Ma'lumotlaringiz faqat siz bilan bog'lanish uchun ishlatiladi.</p>
-        </form>
-      </div>
-    </div>
-  </section>
-
   <section class="wrap faq">
     <h2>Savollar</h2>
     <details><summary>Ilova bepulmi?</summary><p>Ilovani yuklab olish bepul.</p></details>
@@ -76,6 +52,14 @@
     <details><summary>Men xaridorman, nima qilaman?</summary><p>Sotuvchingiz Hesap ishlatsa, shartnoma va to'lov jadvalingiz ilovada bo'ladi. Sotuvchingizga ilovani tavsiya qiling.</p></details>
   </section>
 </main>
+
+<div class="modal" id="quiz" role="dialog" aria-modal="true" aria-label="Ariza">
+  <div class="card">
+    <button class="close" id="close" type="button" aria-label="Yopish">&times;</button>
+    <div class="progress" aria-hidden="true"><i id="bar"></i></div>
+    <div id="step" aria-live="polite"></div>
+  </div>
+</div>
 
 <footer class="wrap foot">
   <span>© Hesap</span>
