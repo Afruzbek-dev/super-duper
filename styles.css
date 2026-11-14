@@ -65,12 +65,6 @@ details p{color:var(--muted);margin:10px 0 0}
 .foot{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;color:var(--muted);font-size:14px;padding-top:56px;padding-bottom:40px}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
 
-/* hero with image */
-.hero{position:relative;color:#fff;background:#0b1b33 url(/hero.jpg) center/cover no-repeat;padding:96px 20px 72px;text-align:center}
-.hero::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,20,40,.55),rgba(8,20,40,.8))}
-.hero>*{position:relative}
-.hero .eyebrow{color:#9cc7ff}
-.hero .lead{color:rgba(255,255,255,.85)}
 /* lead form */
 .modal{display:none;position:fixed;inset:0;z-index:50;background:rgba(0,0,0,.4);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);padding:16px;overflow-y:auto;overscroll-behavior:contain}
 .modal.open{display:flex;animation:fadein .25s ease}
