@@ -21,7 +21,12 @@
     return fetch(GOOGLE_FORM.action, { method: 'POST', mode: 'no-cors', headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body: body.toString() })
       .then(() => true).catch(() => false);
   };
-  const submitLead = (d) => (GOOGLE_FORM.action ? toGoogle(d) : window.sendLead(d));
+  // Apps Script web app URL (ends with /exec). When set, leads go straight to the Google Sheet.
+  const SHEET_WEBHOOK = '';
+  const toSheet = (d) => fetch(SHEET_WEBHOOK, { method: 'POST', mode: 'no-cors', headers: { 'Content-Type': 'text/plain' },
+    body: JSON.stringify({ ...d, variant: location.pathname, utm: window.__utm || {}, referrer: document.referrer }) })
+    .then(() => true).catch(() => false);
+  const submitLead = (d) => (SHEET_WEBHOOK ? toSheet(d) : GOOGLE_FORM.action ? toGoogle(d) : window.sendLead(d));
   // form
   const ph = $('#f-phone');
   const fmtPhone = () => { let d = ph.value.replace(/\D/g, ''); if (d.startsWith('998')) d = d.slice(3); d = d.slice(0, 9); const g = [d.slice(0, 2), d.slice(2, 5), d.slice(5, 7), d.slice(7, 9)].filter(Boolean); ph.value = '+998' + (g.length ? ' ' + g.join(' ') : ' '); };
