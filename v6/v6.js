@@ -9,6 +9,19 @@
   modal.addEventListener('click', (e) => { if (e.target === modal) close(); });
   document.addEventListener('keydown', (e) => { if (e.key === 'Escape') close(); });
   if (location.hash === '#form') open();
+  // Google Form target. Fill these from the form's "Get pre-filled link" (entry.XXXX ids)
+  // and the form's public URL ending in /formResponse. Leave action empty to use /api/lead.
+  const GOOGLE_FORM = {
+    action: '',
+    fields: { name: '', phone: '', telegram: '', location: '', count: '', business: '', intent: '' },
+  };
+  const toGoogle = (d) => {
+    const body = new URLSearchParams();
+    Object.entries(GOOGLE_FORM.fields).forEach(([k, id]) => { if (id && d[k] != null) body.append(id, String(d[k])); });
+    return fetch(GOOGLE_FORM.action, { method: 'POST', mode: 'no-cors', headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body: body.toString() })
+      .then(() => true).catch(() => false);
+  };
+  const submitLead = (d) => (GOOGLE_FORM.action ? toGoogle(d) : window.sendLead(d));
   // form
   const ph = $('#f-phone');
   const fmtPhone = () => { let d = ph.value.replace(/\D/g, ''); if (d.startsWith('998')) d = d.slice(3); d = d.slice(0, 9); const g = [d.slice(0, 2), d.slice(2, 5), d.slice(5, 7), d.slice(7, 9)].filter(Boolean); ph.value = '+998' + (g.length ? ' ' + g.join(' ') : ' '); };
@@ -22,7 +35,7 @@
     d.telegram = f.telegram.value.trim(); d.count = f.count.value;
     if (!ok) return first.focus();
     const b = f.querySelector('button'); b.disabled = true; b.textContent = 'Yuborilmoqda...';
-    if (await window.sendLead(d)) { $('#fbox').innerHTML = `<div class="done">
+    if (await submitLead(d)) { $('#fbox').innerHTML = `<div class="done">
       <div class="tick"><svg viewBox="0 0 52 52" aria-hidden="true"><circle cx="26" cy="26" r="24"/><path d="M15 27l8 8 15-17"/></svg></div>
       <h2>Arizangiz qabul qilindi</h2>
       <p class="q-sub">Tez orada siz bilan bog'lanamiz.</p>
