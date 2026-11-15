@@ -22,7 +22,7 @@
       .then(() => true).catch(() => false);
   };
   // Apps Script web app URL (ends with /exec). When set, leads go straight to the Google Sheet.
-  const SHEET_WEBHOOK = '';
+  const SHEET_WEBHOOK = 'https://script.google.com/macros/s/AKfycbyZWA4xN-AHkRSheCR1crLqnjCKI57l_IBbNEScB3dkF3S_fus6TKTypTynPUQnihX5cw/exec';
   const toSheet = (d) => fetch(SHEET_WEBHOOK, { method: 'POST', mode: 'no-cors', headers: { 'Content-Type': 'text/plain' },
     body: JSON.stringify({ ...d, variant: location.pathname, utm: window.__utm || {}, referrer: document.referrer }) })
     .then(() => true).catch(() => false);
