@@ -40,7 +40,7 @@
     d.telegram = f.telegram.value.trim(); d.count = f.count.value;
     if (!ok) return first.focus();
     const b = f.querySelector('button'); b.disabled = true; b.textContent = 'Yuborilmoqda...';
-    if (await submitLead(d)) { $('#fbox').innerHTML = `<div class="done">
+    if (await submitLead(d)) { try { window.fbq && fbq('track', 'Lead'); } catch (e) {} $('#fbox').innerHTML = `<div class="done">
       <div class="tick"><svg viewBox="0 0 52 52" aria-hidden="true"><circle cx="26" cy="26" r="24"/><path d="M15 27l8 8 15-17"/></svg></div>
       <h2>Arizangiz qabul qilindi</h2>
       <p class="q-sub">Tez orada siz bilan bog'lanamiz.</p>
