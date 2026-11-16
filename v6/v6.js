@@ -47,6 +47,6 @@
       <ol class="next"><li><b>1</b><span>Operatorimiz siz bilan telefon orqali bog'lanadi</span></li><li><b>2</b><span>Do'koningizni Hesap'ga ulaymiz</span></li><li><b>3</b><span>Sotuvchilaringizni o'zimiz o'rgatamiz</span></li></ol>
       <a class="btn tg" href="https://t.me/hesap_uzb" rel="noopener">Telegram kanalimiz</a>
       <button class="btn primary" id="done" type="button">Yopish</button></div>`; $('#done').onclick = close; }
-    else { b.disabled = false; b.textContent = 'Bepul ulanish'; $('#ge').textContent = "Xatolik. Qayta urinib ko'ring."; }
+    else { b.disabled = false; b.textContent = 'Arizani yuborish'; $('#ge').textContent = "Xatolik. Qayta urinib ko'ring."; }
   });
 })();
